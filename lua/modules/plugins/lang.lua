@@ -1,5 +1,10 @@
 local lang = {}
 
+lang["https://gitlab.com/itaranto/plantuml.nvim"] = {
+	lazy = true,
+	ft = { "puml" },
+	config = require("lang.plantuml"),
+}
 lang["fatih/vim-go"] = {
 	lazy = true,
 	ft = "go",

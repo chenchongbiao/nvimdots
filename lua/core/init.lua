@@ -143,6 +143,15 @@ You're recommended to install PowerShell for better experience.]],
 	end
 end
 
+local filetype_config = function()
+	-- for plantuml
+	vim.api.nvim_command("au BufNewFile,BufRead *.puml setfiletype puml")
+	vim.api.nvim_command("au BufNewFile,BufRead *.pu setfiletype puml")
+	vim.api.nvim_command("au BufNewFile,BufRead *.plantuml setfiletype puml")
+	vim.api.nvim_command("au BufNewFile,BufRead *.uml setfiletype puml")
+	vim.api.nvim_command("au BufNewFile,BufRead *.iuml setfiletype puml")
+end
+
 local load_core = function()
 	createdir()
 	disable_distribution_plugins()
@@ -151,6 +160,7 @@ local load_core = function()
 	neovide_config()
 	clipboard_config()
 	shell_config()
+	filetype_config()
 
 	require("core.options")
 	require("core.mapping")
