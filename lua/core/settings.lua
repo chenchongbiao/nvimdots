@@ -34,7 +34,7 @@ settings["format_disabled_dirs"] = {
 
 -- Set it to false if you don't use nvim to open big files.
 ---@type boolean
-settings["load_big_files_faster"] = true
+settings["load_big_files_faster"] = false
 
 -- Change the colors of the global palette here.
 -- Settings will complete their replacement at initialization.
@@ -74,7 +74,6 @@ settings["formatter_block_list"] = {
 settings["server_formatting_block_list"] = {
 	lua_ls = true,
 	tsserver = true,
-	clangd = true,
 }
 
 -- Set the language servers that will be installed during bootstrap here.
@@ -97,11 +96,9 @@ settings["lsp_deps"] = {
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins
 ---@type string[]
 settings["null_ls_deps"] = {
-	"clang_format",
 	"prettier",
 	"shfmt",
 	"stylua",
-	"vint",
 }
 
 -- Set the Debug Adapter Protocol (DAP) clients that will be installed and configured during bootstrap here.
