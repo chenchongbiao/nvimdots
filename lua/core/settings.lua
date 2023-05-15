@@ -83,6 +83,7 @@ settings["server_formatting_block_list"] = {
 settings["lsp_deps"] = {
 	"bashls",
 	"clangd",
+	"cmake",
 	"html",
 	"jsonls",
 	"lua_ls",

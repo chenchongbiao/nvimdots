@@ -10,6 +10,7 @@ return vim.schedule_wrap(function()
 			"c",
 			"cpp",
 			"css",
+			"cmake",
 			"go",
 			"gomod",
 			"html",
