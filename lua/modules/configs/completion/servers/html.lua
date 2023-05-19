@@ -1,4 +1,5 @@
 -- https://github.com/vscode-langservers/vscode-html-languageserver-bin
+-- please use cmd: 'npm i -g vscode-html-languageserver-bin' before using this
 return {
 	cmd = { "html-languageserver", "--stdio" },
 	filetypes = { "html" },
